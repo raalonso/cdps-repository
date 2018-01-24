@@ -56,7 +56,7 @@ def config_nas(node):
 
     cmd_list = ['mkdir -p /mnt/nas',
                 'mount -t glusterfs 10.1.4.21:/nas /mnt/nas',
-                'cd /usr/src/CRM_2017/public; ln -s /mnt/nas ./upload']
+                'cd /usr/src/CRM_2017/public; ln -s /mnt/nas ./uploads']
     for cmd in cmd_list:
         cmd_line = 'sudo lxc-attach --clear-env -n {0} -- bash -c \"{1}\"'.format(node, cmd)
         if execute_commands:
