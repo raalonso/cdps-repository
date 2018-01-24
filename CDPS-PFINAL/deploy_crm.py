@@ -9,7 +9,7 @@ from subprocess import call
 logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger('pfinalp2')
 
-execute_commands = False
+execute_commands = True
 
 
 def install_crm(node):
